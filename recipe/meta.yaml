@@ -1,5 +1,5 @@
 {% set name = "descent" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SimonBoothroyd/descent/archive/{{ version }}.tar.gz
-  sha256: d8ab3995e6393435a7891c9fa9feed22db3eba7f9659204d3a04a82853e5bd3b
+  sha256: 9821c6e0ba393a64da76592373ce7d5a5d11c8e69c4cd00783a0f510cccc18cc
 
 build:
   noarch: python
@@ -21,9 +21,10 @@ requirements:
     - versioningit
   run:
     - python >=3.10
-    - smee >=0.5.2
+    - smee >=0.8.0
     - pydantic >=2
     - pyarrow
+    - datasets
     - scipy
     - pytorch
 test:
