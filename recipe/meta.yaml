@@ -1,5 +1,5 @@
 {% set name = "descent" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SimonBoothroyd/descent/archive/{{ version }}.tar.gz
-  sha256: 7f9c6ce0fa161b59f34fa83b076e613f81c8c57a6f2eaa6dcc3f8e5d18db2120
+  sha256: 476a807f122719709a2f2ce741f83a07341558f22989bceca94aeaf5ea99ca20
 
 build:
   noarch: python
