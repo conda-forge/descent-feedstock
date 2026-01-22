@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "descent" %}
 {% set version = "0.5.2" %}
 
@@ -12,16 +13,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools >=61.0
     - setuptools_scm >=8
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - smee >=0.8.0
     - pydantic
     - pyarrow
@@ -29,6 +30,8 @@ requirements:
     - scipy
     - pytorch
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - descent
 
