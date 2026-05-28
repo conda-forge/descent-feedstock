@@ -38,7 +38,7 @@ test:
   imports:
     - descent
   files:
-    - test_version.py
+    - test_basic_train.py
   commands:
     - python test_basic_train.py
 
