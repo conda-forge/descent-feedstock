@@ -36,7 +36,7 @@ test:
     - descent
 
 about:
-  home: https://github.com/SimonBoothroyd/descent
+  home: https://github.com/openforcefield/descent
   summary: 'Optimize classical force field parameters against reference data'
   description: |
     A framework that aims to offer a modern API for training classical force field parameters 
@@ -46,8 +46,8 @@ about:
   license_file:
     - LICENSE
     - LICENSE_3RD_PARTY
-  doc_url: https://github.com/SimonBoothroyd/descent
-  dev_url: https://github.com/SimonBoothroyd/descent
+  doc_url: https://github.com/openforcefield/descent
+  dev_url: https://github.com/openforcefield/descent
 
 extra:
   recipe-maintainers:
