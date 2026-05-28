@@ -30,7 +30,7 @@ requirements:
     - scipy
     - pytorch
   run_constrained:
-    - openff-interchange-base >= 0.5.0
+    - openff-interchange-base >=0.5.0
 
 test:
   requires:
