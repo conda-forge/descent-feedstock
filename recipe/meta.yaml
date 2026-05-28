@@ -40,7 +40,7 @@ test:
   files:
     - test_version.py
   commands:
-    - python test_version.py
+    - python test_basic_train.py
 
 about:
   home: https://github.com/openforcefield/descent
