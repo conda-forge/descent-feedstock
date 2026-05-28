@@ -3,15 +3,15 @@ About descent-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/descent-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/SimonBoothroyd/descent
+Home: https://github.com/openforcefield/descent
 
 Package license: MIT AND BSD-3-Clause
 
 Summary: Optimize classical force field parameters against reference data
 
-Development: https://github.com/SimonBoothroyd/descent
+Development: https://github.com/openforcefield/descent
 
-Documentation: https://github.com/SimonBoothroyd/descent
+Documentation: https://github.com/openforcefield/descent
 
 A framework that aims to offer a modern API for training classical force field parameters
 (either from a traditional format such as SMIRNOFF or from some ML model) against reference
