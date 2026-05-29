@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,17 +23,26 @@ requirements:
     - setuptools_scm >=8
   run:
     - python >={{ python_min }}
-    - smee >=0.8.0
+    - smee-base >=0.10.0
     - pydantic
     - pyarrow
     - datasets
     - scipy
     - pytorch
+  run_constrained:
+    - openff-interchange-base >=0.5.0
+
 test:
   requires:
     - python {{ python_min }}
+    - openmm
+    - rdkit
   imports:
     - descent
+  files:
+    - test_basic_train.py
+  commands:
+    - python test_basic_train.py
 
 about:
   home: https://github.com/openforcefield/descent
